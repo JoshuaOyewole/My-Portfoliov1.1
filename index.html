@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fullstack Web and Mobile Developer portfolio — 6+ years of experience building modern, responsive web and mobile applications."
+    />
+    <meta
+      property="og:title"
+      content="Developer Portfolio — Fullstack Web & Mobile"
+    />
+    <meta
+      property="og:description"
+      content="Explore my projects, skills, and experience as a Fullstack Web and Mobile Developer."
+    />
+    <meta property="og:type" content="website" />
+    <title>Joshua Oyewole Portfolio — Fullstack Web &amp; Mobile Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom cursor follower (desktop only) -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header class="site-header" id="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a href="#" class="nav__logo"
+          >Joshua<span class="accent">Oyewole</span></a
+        >
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav__list" id="nav-list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <!-- Theme toggle -->
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light/dark theme"
+          title="Toggle theme"
+        >
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <!-- Animated particle canvas background -->
+      <canvas class="hero__canvas" id="hero-canvas"></canvas>
+
+      <div class="container hero__inner">
+        <p class="hero__greeting fade-in">Hello, I'm</p>
+        <h1
+          class="hero__name fade-in"
+          id="hero-name"
+          data-typewriter="Joshua Oyewole"
+        ></h1>
+        <h2 class="hero__title fade-in">
+          <span
+            id="hero-role"
+            data-roles='["Fullstack Web Developer", "Mobile App Developer", "UI/UX Enthusiast", "Performance Obsessed"]'
+          ></span>
+          <span class="typewriter-cursor" aria-hidden="true">|</span>
+        </h2>
+        <p class="hero__intro fade-in">
+          With over <strong>6 years of experience</strong>, I craft fast,
+          accessible, and beautiful digital products — from responsive web apps
+          to cross-platform mobile experiences.
+        </p>
+        <div class="hero__actions fade-in">
+          <a href="#projects" class="btn btn--primary magnetic" data-magnetic
+            >View My Work</a
+          >
+          <a href="https://api.whatsapp.com/send/?text=Hi%20Joshua%20Oyewole,%20I%20would%20like%20to%20connect%20with%20you&phone=2347032054367&utm_source=website&utm_medium=cta&utm_campaign=whatsapp" class="btn btn--outline magnetic" data-magnetic
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__content fade-in">
+          <div class="about__text">
+            <p>
+              I'm a passionate
+              <strong>Fullstack Web and Mobile Developer</strong> with more than
+              six years of professional experience designing, building, and
+              shipping high-quality digital products.
+            </p>
+            <p>
+              I specialize in
+              <strong>React, Next.js, TypeScript, and Node.js</strong>
+              ecosystems. I care deeply about performance, accessibility, and
+              developer experience, and I thrive in collaborative, fast-paced
+              environments.
+            </p>
+            <p>
+              From crafting pixel-perfect UIs to architecting robust REST APIs
+              and databases, I enjoy working across the entire stack to deliver
+              meaningful solutions.
+            </p>
+          </div>
+          <!--   <div class="about__highlights">
+          <div class="highlight-card">
+            <span class="highlight-card__number" data-count="6" data-suffix="+">0+</span>
+            <span class="highlight-card__label">Years Experience</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-card__number" data-count="50" data-suffix="+">0+</span>
+            <span class="highlight-card__label">Projects Delivered</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-card__number" data-count="20" data-suffix="+">0+</span>
+            <span class="highlight-card__label">Happy Clients</span>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <!-- Frontend -->
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#60;/&#62;</div>
+            <h3 class="skill-card__heading">Frontend</h3>
+            <ul class="skill-card__list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5 &amp; CSS3</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+              <li>Component-driven Architecture</li>
+              <li>Reusable UI Systems</li>
+              <li>Responsive UI Development</li>
+              <li>Accessible UI (WCAG)</li>
+            </ul>
+          </div>
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#128736;</div>
+            <h3 class="skill-card__heading">Mobile App</h3>
+            <ul class="skill-card__list">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Cross Platform Development</li>
+            </ul>
+          </div>
+          <!-- APIs, Backend, Data -->
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#128268;</div>
+            <h3 class="skill-card__heading">APIs, Backend &amp; Data</h3>
+            <ul class="skill-card__list">
+              <li>RESTful APIs</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <!--  <li>SQL</li> -->
+              <li>MongoDB</li>
+              <!-- <li>MySQL</li> -->
+            </ul>
+          </div>
+          <!-- Performance, SEO, Accessibility -->
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#9889;</div>
+            <h3 class="skill-card__heading">
+              Performance, SEO &amp; Accessibility
+            </h3>
+            <ul class="skill-card__list">
+              <li>Performance Optimization</li>
+              <li>Semantic HTML</li>
+              <li>Technical SEO (meta, Open Graph)</li>
+              <li>Cross-browser Compatibility</li>
+              <li>Accessibility Standards (WCAG)</li>
+            </ul>
+          </div>
+
+          <!-- Testing, Quality, Delivery -->
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#9989;</div>
+            <h3 class="skill-card__heading">Testing &amp; Quality</h3>
+            <ul class="skill-card__list">
+              <li>Jest</li>
+              <li>React Testing Library</li>
+              <li>Unit Testing</li>
+            </ul>
+          </div>
+
+          <!-- State Management -->
+          <div class="skill-card fade-in">
+            <div class="skill-card__icon" aria-hidden="true">&#128736;</div>
+            <h3 class="skill-card__heading">State Management</h3>
+            <ul class="skill-card__list">
+              <li>React Redux</li>
+              <li>Zustand</li>
+              <li>React Context</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/1a1a2e/e0e0e0?text=InstollConnect&quot;);
+              "
+              role="img"
+              aria-label="InstollConnect screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">InstollConnect</h3>
+              <p class="project-card__desc">
+                A Job matching platform that connects skilled professionals with
+                employers. Features include user authentication, job listings,
+                application tracking, and a messaging system for seamless
+                communication.
+              </p>
+              <div class="project-card__tags">
+                <span>Next.js</span><span>Node.js</span><span>MongoDB</span
+                ><span>Express.js</span>
+              </div>
+              <div class="project-card__links">
+                <a
+                  href="https://instollconnect.vercel.app/"
+                  class="btn btn--sm"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/JoshuaOyewole/Instollar"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/16213e/e0e0e0?text=Felicity+Solar+Ng&quot;);
+              "
+              role="img"
+              aria-label="Felicity Solar Ng screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Felicity Solar Ng</h3>
+              <p class="project-card__desc">
+                A solar energy company website with a modern design and
+                responsive layout. Built with a React frontend and a PHP/MySQL
+                backend for content management.
+              </p>
+              <div class="project-card__tags">
+                <span>React.js</span><span>TypeScript</span><span>PHP</span
+                ><span>MySQL</span>
+              </div>
+              <div class="project-card__links">
+                <a
+                  href="https://felicitysolar.ng/"
+                  class="btn btn--sm"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/JoshuaOyewole/Felicity-Solar-Nigeria"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/0f3460/e0e0e0?text=Thriving+in+Tech&quot;);
+              "
+              role="img"
+              aria-label="Thriving in Tech screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Thriving in Tech</h3>
+              <p class="project-card__desc">
+                A premier training and mentoring institute committed to
+                professional excellence in education, technology, language
+                acquisition, and career advancement.
+              </p>
+              <div class="project-card__tags">
+                <span>React</span><span>Redux</span><span>Node.js</span
+                ><span>MongoDB</span><span>PayStack payment </span>
+              </div>
+              <div class="project-card__links">
+                <a
+                  href="https://www.thrivingintech.com/"
+                  class="btn btn--sm"
+                  target="_blank"
+                  rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/JoshuaOyewole/Leading-Lingual"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+        
+    <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/16213e/e0e0e0?text=Orisfina+Bootcamp&quot;);
+              "
+              role="img"
+              aria-label="Orisfina Bootcamp screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Orisfina Bootcamp</h3>
+              <p class="project-card__desc">
+                Official website for Orisfina Bootcamp, a leading tech training institute. The site features course information, instructor bios, student testimonials, and a contact form for inquiries.
+              </p>
+              <div class="project-card__tags">
+                <span>React</span><span>Socket.io</span><span>Node.js</span
+                ><span>MongoDB</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://orisfinacomputerinstitute.netlify.app/" class="btn btn--sm" target="_blank" rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/JoshuaOyewole/oci"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+          <!-- Project 5 -->
+             <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/1a1a2e/e0e0e0?text=WasHub&quot;);
+              "
+              role="img"
+              aria-label="WasHub screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">WasHub</h3>
+              <p class="project-card__desc">
+               A cross platform mobile app that allows users to easily book appointments with car wash outlets in their area. The app features a sleek, intuitive interface, real-time availability updates, and secure payment processing for a seamless booking experience.
+              </p>
+              <div class="project-card__tags">
+                <span>React Native</span><span>TypeScript</span
+                ><span>Node.js</span><span>MongoDB</span><span>Expo</span><span>PayStack</span>
+              </div>
+              <div class="project-card__links">
+               
+                <a
+                  href="https://github.com/JoshuaOyewole/WasHub-Mobile-App"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                
+              </div>
+            </div>
+          </article>
+      
+
+          <!-- Project 6 -->
+    <!--       <article class="project-card fade-in">
+            <div
+              class="project-card__img"
+              style="
+                background-image: url(&quot;https://placehold.co/600x400/0f3460/e0e0e0?text=Portfolio+Site&quot;);
+              "
+              role="img"
+              aria-label="Portfolio Site screenshot"
+            ></div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Developer Portfolio</h3>
+              <p class="project-card__desc">
+                A performant, accessible portfolio site with smooth animations,
+                dark theme, and a contact form — built with plain HTML, CSS, and
+                JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                ><span>A11y</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="btn btn--sm" target="_blank" rel="noopener"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="btn btn--sm btn--outline"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <div class="contact__inner fade-in">
+          <form
+            class="contact__form"
+            id="contact-form"
+            action="https://formspree.io/f/xreabedz"
+            method="POST"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your message…"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">
+              Send Message
+            </button>
+            <p class="form-status" id="form-status" role="alert"></p>
+          </form>
+
+          <div class="contact__info">
+            <h3>Let's Connect</h3>
+            <p>
+              Feel free to reach out for collaborations, freelance
+              opportunities, or just to say hello!
+            </p>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://github.com/joshuaOyewole"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                >
+                  <!-- GitHub SVG icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.13-3.2.7-3.87-1.54-3.87-1.54-.52-1.34-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.76 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.42.36.79 1.06.79 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/joshuaoyewole"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                >
+                  <!-- LinkedIn SVG icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:joshuaoyewole20@gmail.com" aria-label="Email">
+                  <!-- Email SVG icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <span>Email</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Joshua Oyewole. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
