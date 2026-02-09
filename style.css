@@ -112,6 +112,14 @@ ul {
   margin: var(--sp-sm) auto 0;
 }
 
+.section__subtitle {
+  text-align: center;
+  color: var(--clr-text-muted);
+  font-size: 1.05rem;
+  margin-top: calc(var(--sp-md) * -1);
+  margin-bottom: var(--sp-xl);
+}
+
 /* ---------- Utility: Buttons ---------- */
 .btn {
   display: inline-block;
